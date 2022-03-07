@@ -1,2 +1,1 @@
-# TSC
-Lab TSC
+BUNĂ ZIUA ! 
