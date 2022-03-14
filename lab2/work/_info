@@ -1,0 +1,110 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\User\Desktop\TSC\lab2
+T_opt
+Z1 V@k09:FR24hcZg9zb5VFUH1
+Z2 04 3 4 work top fast 0
+Z3 =1-80ce629d8dc1-622f0e74-3a2-2be0
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OE;O;6.6d;45
+Z7 dC:\Users\User\Desktop\TSC\lab2
+vinstr_register
+Z8 Mx1 6 sv_std 3 std
+Z9 DXx6 sv_std 3 std 0 22 WnQ=;W1X^o9K1PIQTgInR3
+Z10 Mx2 4 work 18 instr_register_pkg
+Z11 DXx4 work 18 instr_register_pkg 0 22 02gFk6Mk11_OQRgfb_<I?3
+Z12 !s100 6^c4H@z>TICN;NJ=0DO5K2
+Z13 Izlgh4QQ_5WV`>EDVk6A=21
+Z14 V3z9A3Eb_VM7O2iR_@`ig80
+Z15 !s105 instr_register_sv_unit
+S1
+R7
+Z16 w1647249382
+Z17 8C:/Users/User/Desktop/TSC/lab2/lab_dut/instr_register.sv
+Z18 FC:/Users/User/Desktop/TSC/lab2/lab_dut/instr_register.sv
+L0 9
+Z19 OE;L;6.6d;45
+r1
+31
+Z20 o-work work -L mtiAvm -L mtiOvm -L mtiUPF
+!s85 0
+Xinstr_register_pkg
+R8
+R9
+Z21 !s100 L:5LRHa82;1ll4mBK7:^71
+Z22 I02gFk6Mk11_OQRgfb_<I?3
+Z23 V02gFk6Mk11_OQRgfb_<I?3
+S1
+R7
+Z24 w1647248755
+Z25 8C:/Users/User/Desktop/TSC/lab2/lab_dut/instr_register_pkg.sv
+Z26 FC:/Users/User/Desktop/TSC/lab2/lab_dut/instr_register_pkg.sv
+L0 5
+R19
+r1
+31
+R20
+!s85 0
+vinstr_register_test
+R8
+R9
+R10
+R11
+Z27 IeE@zg4z7R<MT>fGAO>[zW2
+Z28 V6`6FSaj6O_Q_la;B1RaSU0
+S1
+R7
+Z29 w1647249428
+Z30 8C:/Users/User/Desktop/TSC/lab2/lab01_testbench-interface/instr_register_test.sv
+Z31 FC:/Users/User/Desktop/TSC/lab2/lab01_testbench-interface/instr_register_test.sv
+L0 8
+R19
+r1
+31
+R20
+Z32 !s100 O;GFnFkG5gNoFCZ]E>UU@2
+Z33 !s105 instr_register_test_sv_unit
+!s85 0
+Ytb_ifc
+R8
+R9
+R10
+R11
+Z34 !s100 BBbOUSmanU9nC9C2Um>Rk3
+Z35 IHRKQ_`L4oXm3EkMWz_k5e0
+Z36 V[2MM;6bj4cE27ld353ZQ90
+Z37 !s105 tb_ifc_sv_unit
+S1
+R7
+Z38 w1647250842
+Z39 8C:/Users/User/Desktop/TSC/lab2/lab01_testbench-interface/tb_ifc.sv
+Z40 FC:/Users/User/Desktop/TSC/lab2/lab01_testbench-interface/tb_ifc.sv
+L0 5
+R19
+r1
+31
+R20
+!s85 0
+vtop
+R8
+R9
+R10
+R11
+Z41 !s100 4UmZR3QN]6Um2AWGa;?<21
+Z42 IOV3CelYYUL3`j`:=jR@f[2
+Z43 Ve:gFW1CKLAXc^T:7k2HoD1
+Z44 !s105 top_sv_unit
+S1
+R7
+Z45 w1647274974
+Z46 8C:/Users/User/Desktop/TSC/lab2/lab01_testbench-interface/top.sv
+Z47 FC:/Users/User/Desktop/TSC/lab2/lab01_testbench-interface/top.sv
+L0 5
+R19
+r1
+31
+R20
+!s85 0
