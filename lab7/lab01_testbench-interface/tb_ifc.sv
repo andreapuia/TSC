@@ -20,12 +20,9 @@ interface tb_ifc (input logic clk);
   clocking cb@(clk);
                input instruction_word ;
               output load_en, reset_n, opcode, operand_a,operand_b,write_pointer, read_pointer;
-endclocking;
+endclocking;//sincronizeaza semnalele dupa un anumit clock - nu-l mai definim dupa deoarece el face mereu sincronizarea
 
-modport TB (clocking cb);
-
-  
-
+modport TB (clocking cb); //il folosim doar ca sa apelam clocking block-ul 
 
 endinterface: tb_ifc
 

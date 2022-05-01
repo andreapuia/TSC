@@ -6,8 +6,11 @@
  *
  **********************************************************************/
 
+//functie -> timp de simulare 0
+//task - > contine timp de simulare 
+
 module instr_register
-import instr_register_pkg::*;  // user-defined types are defined in instr_register_pkg.sv
+import instr_register_pkg::*;  // pachetul instr_register_pkg -> declaram semnalele in el
 (input  logic          clk,
  input  logic          load_en,
  input  logic          reset_n,
@@ -21,12 +24,14 @@ import instr_register_pkg::*;  // user-defined types are defined in instr_regist
 );
  // timeunit 1ns/1ns;
 
-  instruction_t  iw_reg [0:31];  // an array of instruction_word structures // 2 la 32 operatii //aici avem operatiile din instr_register_pkg
+  instruction_t  iw_reg [0:31];  // an array of instruction_word structures // 2 la 32 operatii 
+  
+  //aici avem operatiile din instr_register_pkg
 
   // write to the register
   always@(posedge clk, negedge reset_n)   // write into register
     if (!reset_n) begin
-      foreach (iw_reg[i])
+      foreach (iw_reg[i]) //pentru fiecare valoare din array
         iw_reg[i] = '{opc:ZERO,default:0};  // reset to all zeros
     end
     else if (load_en) begin

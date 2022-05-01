@@ -7,5 +7,5 @@ cd ../sim
 
 call run_test.bat 11111 
 call run_test.bat 99999 
-call run_test.bat 13464 
-call run_test.bat 99456
+call run_test.bat 33464 
+call run_test.bat 92336
