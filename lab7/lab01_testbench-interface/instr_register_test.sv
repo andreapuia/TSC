@@ -122,7 +122,7 @@ class First_test;
   function void print_transaction; //FUNCTIA PRINTEAZA IN TRANSCRIPT VALORILE 
     $display("Writing to register location %0d: ", intf_lab.cb.write_pointer);
     $display("  opcode = %0d (%s)", intf_lab.cb.opcode, intf_lab.cb.opcode.name);
-    $display("  operand_a = %0d",  intf_lab_new.cb.operand_a);
+    $display("  operand_a = %0d",  intf_lab.cb.operand_a);
     $display("  operand_b = %0d\n", intf_lab.cb.operand_b);
     //$display("  result = %0d\n", intf_lab.cb.result);
     $display("  Time = %dns", $time());
