@@ -26,6 +26,7 @@ package instr_register_pkg;
     opcode_t  opc;  //ne spune ce operatie vom face
     operand_t op_a; 
     operand_t op_b; //variabila
+    operand_t op_c; //variabila
     result_t result; 
 
   } instruction_t; // instruction_t-un package

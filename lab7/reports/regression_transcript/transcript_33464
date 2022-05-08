@@ -1,0 +1,2 @@
+# 0
+# vsim +notimingchecks +code=bcesft +nowarnTSCALE -coverage -sva -quiet -sv_seed 33464 -novopt top 

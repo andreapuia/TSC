@@ -2,38 +2,38 @@ m255
 K3
 13
 cModel Technology
-dC:\Users\User\Desktop\Lab TSC\Lab 8\sim
+Z0 dC:\Users\User\Desktop\New folder\TSC\lab7\sim
 vinstr_register
-Z0 Mx1 6 sv_std 3 std
-Z1 DXx6 sv_std 3 std 0 22 WnQ=;W1X^o9K1PIQTgInR3
-Z2 Mx2 4 work 18 instr_register_pkg
-Z3 DXx4 work 18 instr_register_pkg 0 22 Nz<iccYQb`>6bc320o?=P1
-V3z9A3Eb_VM7O2iR_@`ig80
+Z1 Mx1 6 sv_std 3 std
+Z2 DXx6 sv_std 3 std 0 22 WnQ=;W1X^o9K1PIQTgInR3
+Z3 Mx2 4 work 18 instr_register_pkg
+Z4 DXx4 work 18 instr_register_pkg 0 22 [2BB04Y5c0DdPdgFBcT2e1
+VGR_;a[M2:UkFAUI4UNU2[2
 r1
 !s85 0
 31
-IfH_lQaWJ7BNN5jz_Q6e2Q2
+ImeBo_GU1hN8J]4VQ@m4G@0
 S1
-Z4 dC:\Users\User\Desktop\TSC_colocviu\TSC\lab7\sim
-Z5 w1651430810
+Z5 dC:\Users\User\Desktop\New folder\TSC\lab7\sim
+w1652036493
 8../lab_dut/instr_register.sv
 F../lab_dut/instr_register.sv
 L0 12
 Z6 OE;L;6.6d;45
 Z7 o-sv -work work -L mtiAvm -L mtiOvm -L mtiUPF
 Z8 !s92 -sv -work work +incdir+../../lab_dut +incdir+../../lab_dut +incdir+../lab01_testbench-interface +incdir+../lab01_testbench-interface +incdir+../lab01_testbench-interface -L mtiAvm -L mtiOvm -L mtiUPF
-!s100 mQA=e8Q<loQ]<I0kI4NAS2
+!s100 WG9;eIj:31LV1mg1^RPkJ2
 !s105 instr_register_sv_unit
 Xinstr_register_pkg
-Z9 Mx1 6 sv_std 3 std
 R1
-VNz<iccYQb`>6bc320o?=P1
+R2
+V[2BB04Y5c0DdPdgFBcT2e1
 r1
 31
-INz<iccYQb`>6bc320o?=P1
+I[2BB04Y5c0DdPdgFBcT2e1
 S1
-R4
 R5
+w1652036170
 8../lab_dut/instr_register_pkg.sv
 F../lab_dut/instr_register_pkg.sv
 L0 5
@@ -41,63 +41,63 @@ R6
 R7
 R8
 !s85 0
-!s100 0Inb4J7zE6hK[gJ[o=NR80
+!s100 YN^ohzaEH><O2?ki[kGzI1
 vinstr_register_test
-R9
 R1
 R2
 R3
+R4
 Mx3 4 work 27 instr_register_test_sv_unit
-DXx4 work 27 instr_register_test_sv_unit 0 22 f2zKPg8ocU5]T658AKMfg1
+DXx4 work 27 instr_register_test_sv_unit 0 22 PVa<EG:HKBhVjG6^hfiZ_0
 VEBCnBoI9@;K2I3Z?DhHY42
 r1
 31
-IbDPA_zJckNb<8M;ODg6zC1
+IDK7>6cFE>Imk4`boBU`H;2
 S1
-R4
-Z10 w1651475591
-Z11 8../lab01_testbench-interface/instr_register_test.sv
-Z12 F../lab01_testbench-interface/instr_register_test.sv
-L0 142
+R5
+Z9 w1652036809
+Z10 8../lab01_testbench-interface/instr_register_test.sv
+Z11 F../lab01_testbench-interface/instr_register_test.sv
+L0 151
 R6
 R7
 R8
 !s85 0
-!s100 o]D4LhJ]QmWnXd=LIfN4n0
+!s100 aQP177f@RUdoR1l4=4OX=1
 !s105 instr_register_test_sv_unit
 Xinstr_register_test_sv_unit
-R9
 R1
 R2
 R3
-Vf2zKPg8ocU5]T658AKMfg1
+R4
+VPVa<EG:HKBhVjG6^hfiZ_0
 r1
 31
-If2zKPg8ocU5]T658AKMfg1
+IPVa<EG:HKBhVjG6^hfiZ_0
 S1
-R4
+R5
+R9
 R10
 R11
-R12
 L0 9
 R6
 R7
 R8
 !s85 0
-!s100 ga1=HiT1iRi07oFNZMSbM3
+!s100 L5YY]3_cB5Bg=U^8k[ofL3
 !i103 1
 Ytb_ifc
-R9
 R1
 R2
 R3
+R4
 V[2MM;6bj4cE27ld353ZQ90
 r1
 31
-IZQM0OFS3<Uo^IfCE0]YLb3
+I1L<W]^_:D4Tz]e3MLg8_13
 S1
-R4
-w1651430809
+R5
+w1652036403
 8../lab01_testbench-interface/tb_ifc.sv
 F../lab01_testbench-interface/tb_ifc.sv
 L0 5
@@ -105,20 +105,20 @@ R6
 R7
 R8
 !s85 0
-!s100 f>?<A5J[N58ESDLVY45og0
+!s100 c?Z]dzCch`[eb0SdlAbC]0
 !s105 tb_ifc_sv_unit
 vtop
-R9
 R1
 R2
 R3
+R4
 Ve:gFW1CKLAXc^T:7k2HoD1
 r1
 31
-IHW;4ZIKg__mABohQ<A?@90
+INMi6KUz]08[8g;F0fYYM33
 S1
-R4
 R5
+w1652036432
 8../lab01_testbench-interface/top.sv
 F../lab01_testbench-interface/top.sv
 L0 5
@@ -126,5 +126,5 @@ R6
 R7
 R8
 !s85 0
-!s100 zFCa_AB_EI`eC;Hi`Yd810
+!s100 >DmbGXl@nAj9Y3a9h68c@2
 !s105 top_sv_unit
