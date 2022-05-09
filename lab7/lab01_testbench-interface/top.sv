@@ -48,7 +48,6 @@ module top;
     .reset_n(intf_lab.reset_n),
     .operand_a(intf_lab.operand_a),
     .operand_b(intf_lab.operand_b),
-    .operand_c(intf_lab.operand_c),
     .result(intf_lab.result),
     .opcode(intf_lab.opcode),
     .write_pointer(intf_lab.write_pointer),

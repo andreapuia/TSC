@@ -16,11 +16,6 @@ class First_test;
 
 
  covergroup my_coverage;
-    test_COVER: coverpoint  intf_lab.cb.operand_c //OPA_COVER este o eticheta
-      {
-        bins op_c_values_0={0};
-        bins op_c_values_poz[]={[1:15]};
-      }
 
     OPERAND_A_COVER: coverpoint  intf_lab.cb.operand_a //OPA_COVER este o eticheta
       {
@@ -121,7 +116,6 @@ class First_test;
    //intf_lab.cb.opcode        <= opcode_t'($unsigned($random)%8);  // between 0 and 7, cast to opcode_t type //CAST-TRECE DIN INDEX IN STRING
     intf_lab.cb.operand_a     <= $signed($urandom())%16;                       // between -15 and 15 //urandom genereaza numere pe 32 de biti %16-aduce valoare intre -199 si 1999
     intf_lab.cb.operand_b     <= $unsigned($urandom)%16;            // between 0 and 15
-     intf_lab.cb.operand_c     <= $unsigned($urandom)%16; 
     intf_lab.cb.opcode        <= opcode_t'($unsigned($urandom)%8);  // between 0 and 7, cast to opcode_t type //CAST-TRECE DIN IND
     intf_lab.cb.write_pointer <= temp++;
   endfunction: randomize_transaction
@@ -131,7 +125,6 @@ class First_test;
     $display("  opcode = %0d (%s)", intf_lab.cb.opcode, intf_lab.cb.opcode.name);
     $display("  operand_a = %0d",  intf_lab.cb.operand_a);
     $display("  operand_b = %0d", intf_lab.cb.operand_b);
-    $display("  operand_c = %0d\n", intf_lab.cb.operand_c);
     $display("  result = %0d\n", intf_lab.cb.result);
     $display("  Time = %dns", $time());
   endfunction: print_transaction
@@ -141,7 +134,6 @@ class First_test;
     $display("  opcode = %0d (%s)", intf_lab.cb.instruction_word.opc, intf_lab.cb.instruction_word.opc.name);
     $display("  operand_a = %0d",   intf_lab.cb.instruction_word.op_a);
     $display("  operand_b = %0d\n", intf_lab.cb.instruction_word.op_b);
-     $display("  operand_c = %0d\n", intf_lab.cb.instruction_word.op_c);
     $display("  Result = %0d\n", intf_lab.cb.instruction_word.result);
     $display("  Time =  %dns", $time());
     //adaug result
