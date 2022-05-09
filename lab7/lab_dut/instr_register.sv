@@ -19,7 +19,7 @@ import instr_register_pkg::*;  // pachetul instr_register_pkg -> declaram semnal
  input  opcode_t       opcode,
  input  address_t      write_pointer,
  input  address_t      read_pointer,
- //output  result_t       result,
+ output  result_t       result,
  output instruction_t  instruction_word // DE AICI SE GENEREAZA SEMNALUL instruction_t CARE VA FI FOLOSIT IN INTERFATA
 );
  // timeunit 1ns/1ns;
@@ -35,18 +35,20 @@ import instr_register_pkg::*;  // pachetul instr_register_pkg -> declaram semnal
         iw_reg[i] = '{opc:ZERO,default:0};  // reset to all zeros
     end
     else if (load_en) begin
+      @(operand_a, operand_b);
       case (opcode)
               //iw_reg[write_pointer] = '{opcode,operand_a,operand_b};
       ZERO  : iw_reg[write_pointer] = '{opcode, operand_a, operand_b, 'b0};
-      PASSA : iw_reg[write_pointer] = '{opcode, operand_a, operand_b, operand_a};
+      PASSA : iw_reg[write_pointer] = '{opcode, operand_a, operand_b,  operand_a};
       PASSB : iw_reg[write_pointer] = '{opcode, operand_a, operand_b, operand_b};
       ADD   : iw_reg[write_pointer] = '{opcode, operand_a, operand_b, $signed(operand_a + operand_b)};
       SUB   : iw_reg[write_pointer] = '{opcode, operand_a, operand_b, $signed(operand_a - operand_b)};
       MULT  : iw_reg[write_pointer] = '{opcode, operand_a, operand_b, $signed(operand_a * operand_b)};
       DIV   : iw_reg[write_pointer] = '{opcode, operand_a, operand_b, $signed(operand_a / operand_b)};
       MOD   : iw_reg[write_pointer] = '{opcode, operand_a, operand_b, $signed(operand_a % operand_b)};
-    default : iw_reg[write_pointer] = '{opcode, operand_a, operand_b, 'x};
+    default : iw_reg[write_pointer] = '{opcode, operand_a, operand_b,   'x};
     endcase
+    result = iw_reg[write_pointer].result;
   end
   
   // read from the register

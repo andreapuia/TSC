@@ -16,6 +16,7 @@ class First_test;
 
 
  covergroup my_coverage;
+
     OPERAND_A_COVER: coverpoint  intf_lab.cb.operand_a //OPA_COVER este o eticheta
       {
         bins op_a_values_neg[]={[-15:-1]}; //am pus parantezele patrate ca sa ne poata lua toate valoriile din interval - facem un vector
@@ -123,8 +124,8 @@ class First_test;
     $display("Writing to register location %0d: ", intf_lab.cb.write_pointer);
     $display("  opcode = %0d (%s)", intf_lab.cb.opcode, intf_lab.cb.opcode.name);
     $display("  operand_a = %0d",  intf_lab.cb.operand_a);
-    $display("  operand_b = %0d\n", intf_lab.cb.operand_b);
-    //$display("  result = %0d\n", intf_lab.cb.result);
+    $display("  operand_b = %0d", intf_lab.cb.operand_b);
+    $display("  result = %0d\n", intf_lab.cb.result);
     $display("  Time = %dns", $time());
   endfunction: print_transaction
 
